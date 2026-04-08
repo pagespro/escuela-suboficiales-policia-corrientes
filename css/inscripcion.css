@@ -1,0 +1,145 @@
+:root {
+  --verde: #0A8F2A;
+  --azul: #0B2C4D;
+  --dorado: #D4A017;
+  --gris: #f5f5f5;
+  --blanco: #ffffff;
+}
+
+
+/* GENERAL */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--gris);
+}
+
+/* ENCABEZADO */
+.titulo {
+  margin-top: 50%; /* ajustalo según altura de tu navbar */
+  font-weight: 700;
+  color: var(--azul);
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.text-center h3 {
+  color: var(--verde);
+  font-weight: 500;
+}
+
+.text-center p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* MENSAJE */
+.mensaje {
+  background: linear-gradient(135deg, rgba(79,163,209,0.1), rgba(10,143,42,0.08));
+  border-left: 5px solid var(--verde);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.mensaje:hover {
+  transform: translateY(-3px);
+}
+
+.mensaje p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* TITULOS DE SECCIÓN */
+.seccion-titulo {
+  margin-top: 10%; /* ajustalo según altura de tu navbar */
+  font-weight: 600px;
+  color: var(--azul);
+  position: relative;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+/* línea decorativa */
+.seccion-titulo::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: var(--dorado);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 2px;
+}
+
+/* LISTAS */
+.lista-requisitos,
+.mb-5 ul,
+.mb-5 ol {
+  text-align: left; /* importante para que no quede feo */
+}
+
+/* ITEMS */
+.lista-requisitos li,
+ul li,
+ol li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #333;
+  transition: 0.2s;
+}
+
+
+
+/* SUBLISTAS */
+.lista-requisitos ul {
+  margin-top: 8px;
+}
+
+.lista-requisitos ul li {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* SEPARACIÓN ENTRE BLOQUES */
+.mb-5 {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.descarga {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+
+/* BOTÓN DESCARGA */
+.descarga > a {
+  background: linear-gradient(45deg, var(--dorado), #f5c542);
+  color: var(--azul);
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-weight: 800px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+/* hover botón */
+.descarga > a:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  color: black;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 1.8rem;
+  }
+
+  .mensaje p {
+    font-size: 1rem;
+  }
+}

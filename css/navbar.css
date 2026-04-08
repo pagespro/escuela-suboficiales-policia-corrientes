@@ -1,0 +1,92 @@
+/* NAVBAR METALICO */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+
+  /* Base metálica */
+  background: linear-gradient(
+    135deg,
+    #1f3d2b 0%,
+    #2f5a3f 25%,
+    #3a6f4c 50%,
+    #2f5a3f 75%,
+    #1f3d2b 100%
+  );
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  overflow: hidden;
+
+
+}
+
+/* EFECTO BRILLO */
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.4),
+    transparent
+  );
+
+  transform: skewX(-25deg);
+  animation: brilloMetal 25s infinite;
+}
+
+/* ANIMACIÓN DEL BRILLO */
+@keyframes brilloMetal {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 120%;
+  }
+  100% {
+    left: 120%;
+  }
+}
+
+/* LOGO */
+.navbar > div > a > img {
+  border-radius: 50%;
+  border: 2px solid var(--celeste-institucional);
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+/* LINKS */
+.navbar .nav-link {
+  color: var(--blanco) !important;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* EFECTO HOVER DORADO */
+.navbar .nav-link:hover {
+  color: var(--dorado-institucional) !important;
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.7);
+}
+
+/* SUBRAYADO ANIMADO */
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: var(--dorado-institucional);
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}

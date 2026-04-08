@@ -1,0 +1,119 @@
+html, body {
+  margin-top: 5pc;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#footer {
+  margin-top: auto;
+}
+
+/*  SECCION AUTORIDADES  */
+
+.autoridades-section{
+  background: linear-gradient(135deg, #5f7393, #657ca0);
+  padding: 60px 0;
+}
+
+/* TARJETAS */
+.autoridad{
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+  padding: 25px;
+  border-radius: 14px;
+  text-align: center;
+  height: 100%;
+  position: relative;
+
+  border-top: 5px solid var(--verde-institucional);
+  border-bottom: 2px solid rgba(0,0,0,0.05);
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  transition: all .35s ease;
+  overflow: hidden;
+}
+
+/* DETALLE SUPERIOR SUTIL */
+.autoridad::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 70%,
+    rgba(255,255,255,0.3),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity .4s ease;
+}
+
+/* HOVER */
+.autoridad:hover{
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.autoridad:hover::before{
+  opacity: 1;
+}
+
+/* CARGO */
+.cargo{
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--azul-institucional);
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+/* JERARQUIA */
+.jerarquia{
+  font-size: 1rem;
+  color: var(--verde-institucional);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* NOMBRE */
+.nombre{
+  font-size: 1rem;
+  color: #444;
+  font-weight: 500;
+}
+
+/* LINEA DECORATIVA */
+.nombre::after{
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--dorado-institucional);
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+  .cargo{
+    font-size:1.1rem;
+  }
+
+  .jerarquia{
+    font-size:0.95rem;
+  }
+
+  .nombre{
+    font-size:0.95rem;
+  }
+
+}

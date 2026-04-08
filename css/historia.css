@@ -1,0 +1,11 @@
+
+.historia-section{
+  margin-top: 5pc;
+}
+/* Animaciones página Historia */
+.historia-contenido h2, .historia-contenido p {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease forwards;
+}
+

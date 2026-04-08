@@ -1,0 +1,248 @@
+/* ===== PALETA INSTITUCIONAL ===== */
+:root {
+  --verde-institucional: #0A8F2A;
+  --azul-institucional: #0B2C4D;
+  --dorado-institucional: #D4A017;
+  --rojo-institucional: #C62828;
+  --celeste-institucional: #4FA3D1;
+  --blanco: #ffffff;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: var(--verde-institucional) !important;
+}
+
+.navbar > div > a > img {
+  border-radius: 50%;
+  border: 2px solid var(--dorado-institucional);
+}
+
+.navbar .nav-link {
+  color: var(--blanco) !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: var(--dorado-institucional) !important;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: url('portada.jpg') center center/cover no-repeat;
+  height: 100vh; /* ocupa toda la pantalla */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: var(--azul-institucional);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4); /* capa semitransparente */
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.presentacion{
+
+  height: 100vh; /* ocupa toda la pantalla */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: var(--azul-institucional);
+
+}
+
+.presentacion h2{
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.presentacion p{
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+}
+
+/* ===== VIDEO ===== */
+.video-institucional {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+  border: 3px solid var(--verde-institucional);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: scale(0.9);
+  animation: zoomIn 1.2s ease forwards;
+  animation-delay: 1.8s;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: var(--azul-institucional) !important;
+  color: var(--blanco);
+}
+
+/* ===== TITULOS ===== */
+h1, h2, h3 {
+  color: var(--celeste-institucional);
+}
+
+/* ===== BOTONES ===== */
+.btn-institucional {
+  background-color: var(--verde-institucional);
+  color: var(--blanco);
+  border: none;
+}
+
+.btn-institucional:hover {
+  background-color: var(--dorado-institucional);
+}
+
+/* ===== ANIMACIONES ===== */
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Animaciones hero */
+.hero h1, .hero p {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1.2s ease forwards;
+}
+
+.hero h1 { animation-delay: 0.3s; }
+.hero p { animation-delay: 0.7s; }
+
+/* Animaciones sección Presentación */
+section.container h2, section.container p {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+}
+
+section.container h2 { animation-delay: 1.2s; }
+section.container p { animation-delay: 1.4s; }
+
+/* Animaciones tarjetas */
+.card {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.col-md-4:nth-child(1) .card { animation-delay: 2.2s; }
+.col-md-4:nth-child(2) .card { animation-delay: 2.5s; }
+.col-md-4:nth-child(3) .card { animation-delay: 2.8s; }
+
+.col-md-6:nth-child(1) .card { animation-delay: 3.2s; }
+.col-md-6:nth-child(2) .card { animation-delay: 3.5s; }
+
+/* Animaciones página Historia */
+.historia-contenido h2, .historia-contenido p {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease forwards;
+}
+
+/* retraso progresivo historia */
+.historia-contenido h2:nth-of-type(1) { animation-delay: 0.2s; }
+.historia-contenido p:nth-of-type(1)  { animation-delay: 0.4s; }
+
+.historia-contenido h2:nth-of-type(2) { animation-delay: 0.8s; }
+.historia-contenido p:nth-of-type(2)  { animation-delay: 1s; }
+.historia-contenido p:nth-of-type(3)  { animation-delay: 1.2s; }
+
+.historia-contenido h2:nth-of-type(3) { animation-delay: 1.5s; }
+.historia-contenido p:nth-of-type(4)  { animation-delay: 1.7s; }
+
+.historia-contenido h2:nth-of-type(4) { animation-delay: 2.1s; }
+.historia-contenido p:nth-of-type(5)  { animation-delay: 2.3s; }
+
+.historia-contenido h2:nth-of-type(5) { animation-delay: 2.7s; }
+.historia-contenido p:nth-of-type(6)  { animation-delay: 2.9s; }
+
+/* ===== SECCION AUTORIDADES ===== */
+
+.autoridades-section{
+  background:#657ca0;
+}
+
+/* TARJETAS */
+
+.autoridad{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  text-align:center;
+  height:100%;
+  border-top:5px solid var(--verde-institucional);
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+  transition:all .3s ease;
+}
+
+/* HOVER */
+
+.autoridad:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* CARGO */
+
+.cargo{
+  font-size:1.2rem;
+  font-weight:700;
+  color:var(--azul-institucional);
+  margin-bottom:10px;
+}
+
+/* JERARQUIA */
+
+.jerarquia{
+  font-size:1rem;
+  color:var(--verde-institucional);
+  font-weight:600;
+  margin-bottom:6px;
+}
+
+/* NOMBRE */
+
+.nombre{
+  font-size:1rem;
+  color:#444;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+  .cargo{
+    font-size:1.1rem;
+  }
+
+  .jerarquia{
+    font-size:0.95rem;
+  }
+
+  .nombre{
+    font-size:0.95rem;
+  }
+
+}

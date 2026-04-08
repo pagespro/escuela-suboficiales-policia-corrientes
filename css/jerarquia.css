@@ -1,0 +1,75 @@
+
+.titulo-principal{
+    padding-top: 8pc;
+}
+/* CONTENEDOR SIN MÁRGENES */
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* FILAS SIEMPRE EN LÍNEA */
+.row {
+    display: flex;
+    flex-wrap: nowrap !important;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+}
+
+/* COLUMNAS FLEXIBLES */
+.row > div {
+    flex: 1 1 auto;
+    max-width: none !important;
+    padding: 5px;
+}
+
+/* TARJETA */
+.escalafon {
+    text-align: center;
+    
+}
+
+/* IMÁGENES*/
+.escalafon img {
+    width: 100%;
+    max-width: 300px; 
+    height: auto;
+    object-fit: contain;
+    border-top-right-radius: 50px; 
+    border-bottom-right-radius: 50px; 
+    
+
+     transition: transform 0.9s ease, box-shadow 0.3s ease;
+}
+
+.escalafon img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* TEXTO */
+.jerarquia {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: clamp(12px, 1.2vw, 16px);
+    color: var(--azul-institucional);
+    
+    margin-bottom: 1pc;
+    text-align: center;
+}
+
+/* TITULOS */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: clamp(18px, 2vw, 28px);
+}
+
+/* TITULOS */
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: clamp(18px, 2vw, 28px);
+    text-decoration: underline;
+}

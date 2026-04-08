@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aviso de Privacidad | Escuela de Suboficiales Sargento Juan Bautista Cabral</title>
+
+<link rel="icon" href="/fav-icon.jpg" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="css/index.css">
+<style>
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    color:#333;
+    line-height:1.6;
+}
+
+main{
+    max-width:900px;
+    margin:auto;
+    
+    background:white;
+    padding:40px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    padding-top: 5pc;
+}
+
+h3{
+    color:#0A8F2A;
+    margin-top:0;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<main>
+
+<h3>Aviso de Privacidad</h3>
+
+<p>
+El presente sitio web tiene carácter estrictamente informativo y se encuentra destinado a brindar información institucional relacionada con las actividades, historia, formación y procesos de ingreso de la institución.
+</p>
+
+<p>
+  En cumplimiento de lo establecido por la Ley Nº 25.326 de Protección de Datos Personales de la República Argentina, se informa a los usuarios que este sitio web no solicita, registra ni almacena datos personales identificables de los visitantes durante la navegación.
+</p>
+
+<p>
+  La utilización del sitio se realiza de manera anónima y no se requiere la creación de cuentas de usuario ni el registro previo para acceder a los contenidos publicados. Asimismo, la institución no recopila información personal sensible ni realiza tratamiento automatizado de datos personales a través de esta plataforma.
+</p>
+
+<p>
+  La navegación en el sitio puede generar de forma automática determinados datos técnicos de carácter no identificatorio, tales como dirección IP, tipo de navegador utilizado o sistema operativo, los cuales son utilizados exclusivamente con fines estadísticos o de funcionamiento técnico del servicio web y en ningún caso permiten identificar personalmente a los usuarios.
+</p>
+
+<p>
+  La institución se compromete a garantizar la confidencialidad y seguridad de cualquier información que eventualmente pudiera incorporarse al sitio en el futuro mediante formularios u otros mecanismos de contacto, respetando en todo momento la normativa vigente en materia de protección de datos personales.
+</p>
+
+<p>
+  En caso de que el sitio incorpore en el futuro herramientas que impliquen la recopilación de datos personales (por ejemplo formularios de contacto o inscripción), se informará de manera expresa a los usuarios sobre la finalidad del tratamiento de dichos datos y los derechos que les asisten conforme a la legislación vigente.
+</p>
+
+<p>
+  El acceso y uso del presente sitio web implica el conocimiento y aceptación del presente Aviso de Privacidad por parte del usuario.
+</p>
+
+</main>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+fetch("footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+<script>
+fetch("navbar.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("navbar").innerHTML = data;
+  });
+</script>
+
+<div id="footer"></div>
+
+</body>
+</html>
