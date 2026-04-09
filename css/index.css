@@ -114,6 +114,48 @@ body {
   z-index: 3;
 }
 
+.barra-inscripciones {
+  display: block;
+  width: 100%;
+  background: linear-gradient(90deg, #0A8F2A, #0c6e22);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  border-top: 3px solid #D4A017;
+  border-bottom: 3px solid #D4A017;
+}
+
+.texto-animado {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 10px 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  animation: moverTexto 15s linear infinite;
+}
+
+/* Animación tipo desplazamiento */
+@keyframes moverTexto {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Hover (efecto profesional) */
+.barra-inscripciones:hover {
+  background: linear-gradient(90deg, #D4A017, #b38a12);
+  color: #000;
+  transition: 0.5s;
+}
+
+.barra-inscripciones:hover .texto-animado {
+  animation-play-state: paused;
+}
+
 
 /* ===== ESCRITORIO ===== */
 @media (min-width: 768px) {
