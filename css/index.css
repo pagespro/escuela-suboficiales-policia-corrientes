@@ -49,10 +49,6 @@ body {
   animation: aparecer 0.3s ease-in forwards;
 }
 
-/* contorno negro del titulo principal (para visualizar lo mejor) */
-
-
-
 /*  ANIMACIÓN DE APARICIÓN  */
 /* Hace que el body aparezca suavemente */
 @keyframes aparecer {
@@ -92,18 +88,6 @@ body {
   z-index: 1;
   
 }
-
-
-/*  CAPA OSCURA SOBRE EL FONDO  */
-/* Oscurece la imagen para mejorar legibilidad 
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.5);
-  z-index: 2;
-}
-*/
 
 /*  CONTENIDO DEL HERO  */
 /* Asegura que el contenido quede por encima del fondo */
@@ -288,18 +272,6 @@ body {
   animation: moverTexto 25s linear infinite;
 }
 
-
-/*  ANIMACIÓN DE TEXTO  */
-@keyframes moverTexto {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-
 /*  PRESENTACIÓN  */
 /* Espaciado y tamaños responsivos */
 .presentacion {
@@ -448,63 +420,6 @@ h1, h2, h3 {
   box-shadow: 0 0 4px rgba(255,215,0,0.5);
 }
 
-/*estilos de la seccion contacto*/
-/* Fondo azul metálico */
-.seccion-contacto {
-  min-height: 100vh;
-  background: linear-gradient(135deg, #0B2C4D, #1e4fa3, #0B2C4D);
-  background-size: 300% 300%;
-  animation: brilloFondo 6s ease infinite;
-  color: white;
-}
-
-@keyframes brilloFondo {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* Items */
-.contacto-item a {
-  text-decoration: none;
-  color: white;
-}
-
-/* Iconos */
-.icono {
-  font-size: 70px;
-  transition: all 0.3s ease;
-}
-
-/* Colores metálicos */
-.whatsapp {
-  color: #25D366;
-}
-
-.facebook {
-  color: #3b82f6;
-}
-
-.email {
-  color: #dc3545;
-}
-
-/* Hover elegante */
-.contacto-item:hover .icono {
-  transform: scale(1.2);
-  filter: brightness(1.3);
-}
-
-.contacto-item:hover h5 {
-  transform: translateY(5px);
-}
-
-/* Títulos */
-.contacto-item h5 {
-  transition: 0.3s;
-}
-
-
 /*  SCROLL PERSONALIZADO  */
 /* Estilos para la barra de scroll */
 ::-webkit-scrollbar {
@@ -518,6 +433,28 @@ h1, h2, h3 {
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(180deg, #d4af37, #b8962e);
   border-radius: 20px;
+}
+
+/* GALERIA */
+.galeria {
+  background-color: #f8f9fa;
+}
+
+.galeria h2 {
+  color: #0b2c4d;
+}
+
+.galeria-item {
+  transition: 0.3s;
+}
+
+.galeria-item:hover {
+  transform: translateY(-5px);
+}
+
+.galeria video {
+  max-height: 350px;
+  object-fit: cover;
 }
 
 
