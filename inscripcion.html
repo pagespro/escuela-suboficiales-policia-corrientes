@@ -28,125 +28,110 @@
 </head>
 <body>
 
-
-<!-- barra de navegacion-->
+<!-- NAVBAR -->
 <div id="navbar"></div>
 
-  <!-- ENCABEZADO -->
-  <div class="text-center mb-5">
-    <h2 class="titulo">Escuela de Suboficiales</h2>
-    <h3>"Sargento Juan Bautista Cabral"</h3>
-    <p>Policía de la Provincia de Corrientes</p>
+<!-- ENCABEZADO -->
+<header class="header text-center">
+  <div class="container">
+    <h1 class="titulo">Escuela de Suboficiales</h1>
+    <h3 class="subtitulo">"Sargento Juan Bautista Cabral"</h3>
+    <p class="descripcion">Policía de la Provincia de Corrientes</p>
   </div>
+</header>
 
-  <!-- MENSAJE -->
-  <div class="card mb-5 p-4 mensaje">
-    
+<!-- BARRA -->
+<a class="barra-inscripciones" href="#">
+  INSCRIPCIONES CERRADAS 2026 • HAGA CLICK PARA VER LOS REQUISITOS
+</a>
+
+<!-- MENSAJE -->
+<section class="container py-4">
+  <div class="card mensaje">
     <p>
       La Escuela de Suboficiales tiene la responsabilidad de formar al personal
       policial, brindando preparación profesional, valores éticos y vocación de servicio.
       Se invita a los jóvenes a formar parte de esta noble profesión al servicio de la comunidad.
     </p>
   </div>
+</section>
 
-  <section class="inscripcion container py-5"></section>
-
-  <!-- REQUISITOS -->
-  <div class="mb-5">
+<!-- REQUISITOS -->
+<section class="container seccion">
   <h4 class="seccion-titulo">Requisitos de Ingreso</h4>
 
   <ul class="lista-requisitos">
-
     <li>Ser argentino/a nativo/a o por opción.</li>
-
     <li>Ser soltero/a.</li>
+    <li>Menores de 18: autorización certificada.</li>
+    <li>Secundario completo sin adeudar materias.</li>
+    <li>Buenas condiciones morales.</li>
+    <li>Aptitud psicofísica.</li>
+    <li>No enfermedades inhabilitantes.</li>
+    <li>Sin limitaciones físicas.</li>
 
-    <li>Los menores de 18 años deberán presentar consentimiento escrito de los padres o tutores legales, certificado por escribano público.</li>
-
-    <li>Tener aprobado el Nivel Secundario completo, sin adeudar materias al momento de la inscripción.</li>
-
-    <li>Poseer aptitudes de moralidad y buenas costumbres.</li>
-
-    <li>Tener salud y aptitud psico-física para realizar actividades de alto rendimiento.</li>
-
-    <li>No padecer enfermedades crónicas o infectocontagiosas consideradas inhabilitantes.</li>
-
-    <li>No hallarse lesionado ni disminuido en su capacidad física motriz, ni encuadrar en causales de no aptitud médica.</li>
-
-    <li>Tener una estatura mínima de:
+    <li>
+      Estatura mínima:
       <ul>
         <li>1,65 m (masculino)</li>
         <li>1,60 m (femenino)</li>
       </ul>
     </li>
 
-    <li>Poseer una relación adecuada entre talla y peso según el índice de masa corporal (IMC), determinado en el examen médico.</li>
-
-    <li>No registrar antecedentes judiciales ni policiales, ni estar imputado o procesado por delitos dolosos (según normativa vigente).</li>
-
-    <li>Las postulantes femeninas no deberán encontrarse en estado de embarazo al momento del examen de admisión.</li>
-
-    <li>No poseer tatuajes visibles con el uso del uniforme (rostro, cuello, brazos o piernas).</li>
-
+    <li>IMC adecuado.</li>
+    <li>Sin antecedentes.</li>
+    <li>No embarazo (femenino).</li>
+    <li>No tatuajes visibles.</li>
   </ul>
-</div>
-
-  <!-- DOCUMENTACIÓN -->
-  <div class="mb-5">
-    <h4 class="seccion-titulo">Documentación Requerida</h4>
-    <ul>
-      <li>DNI actualizado</li>
-      <li>Partida de nacimiento</li>
-      <li>Título secundario</li>
-      <li>Certificado de antecedentes penales</li>
-      <li>Certificado de domicilio</li>
-      <li>Fotografías tipo carnet</li>
-    </ul>
-  </div>
-
-  <!-- PROCESO -->
-  <div class="mb-5">
-    <h4 class="seccion-titulo">Proceso de Selección</h4>
-    <ol>
-      <li>Inscripción del aspirante</li>
-      <li>Evaluación médica</li>
-      <li>Evaluación física</li>
-      <li>Evaluación psicológica</li>
-      <li>Entrevista personal</li>
-      <li>Ingreso según orden de mérito</li>
-    </ol>
-  </div>
-
-  <!-- BOTÓN DESCARGA -->
-<div class="text-center mt-5 descarga">
-<a href="documentos/cartilla-inscripcion-2026.pdf" target="_blank" class="btn btn-descarga">    📄 Descargar Cartilla de Inscripción 2026
-  </a>
-</div>
-
 </section>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- DOCUMENTOS -->
+<section class="container seccion">
+  <h4 class="seccion-titulo">Documentación</h4>
+  <ul>
+    <li>DNI</li>
+    <li>Partida de nacimiento</li>
+    <li>Título secundario</li>
+    <li>Antecedentes penales</li>
+    <li>Certificado de domicilio</li>
+    <li>Fotos carnet</li>
+  </ul>
+</section>
 
+<!-- PROCESO -->
+<section class="container seccion">
+  <h4 class="seccion-titulo">Proceso de Selección</h4>
+  <ol>
+    <li>Inscripción</li>
+    <li>Examen médico</li>
+    <li>Prueba física</li>
+    <li>Evaluación psicológica</li>
+    <li>Entrevista</li>
+    <li>Orden de mérito</li>
+  </ol>
+</section>
+
+<!-- DESCARGA -->
+<section class="container text-center descarga">
+  <a href="documentos/cartilla-inscripcion-2026.pdf" target="_blank">
+    📄 Descargar Cartilla de Inscripción
+  </a>
+</section>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
 fetch("navbar.html")
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("navbar").innerHTML = data;
-  });
-</script>
+.then(res => res.text())
+.then(data => document.getElementById("navbar").innerHTML = data);
 
-<script>
 fetch("footer.html")
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("footer").innerHTML = data;
-  });
+.then(res => res.text())
+.then(data => document.getElementById("footer").innerHTML = data);
 </script>
 
-<div id="footer"></div>
 </body>
-
-
 </html>

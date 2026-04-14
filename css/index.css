@@ -156,6 +156,40 @@ body {
   animation-play-state: paused;
 }
 
+/*estilo video periodo de adaptacion*/
+.video-container {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.video-container video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* BOTÓN PLAY */
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 50px;
+  padding: 20px 30px;
+  border-radius: 50%;
+  
+  transition: 0.3s;
+}
+
+.video-container:hover .play-btn {
+  background: rgba(0,0,0,0.8);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
 
 /* ESCRITORIO */
 @media (min-width: 768px) {

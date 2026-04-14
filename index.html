@@ -63,8 +63,31 @@
     INSCRIPCIONES CERRADAS 2026 • CONSULTE AQUÍ LOS REQUISITOS PARA LA INCORPORACIÓN
   </p>
 </a>
-
     </section>
+
+    <section class="video-promocion py-5">
+  <div class="container text-center">
+
+    <h2 class="mb-4 fw-bold">Período de Adaptación</h2>
+
+    <p class="mb-4">
+      Imágenes correspondientes a la VIII promoción durante su etapa inicial de formación bajo régimen de internado.
+    </p>
+
+    <div class="video-container" onclick="playVideo()">
+      
+      <video id="videoPromo" class="w-100 rounded shadow">
+        <source src="videos/video_periodoAdaptacion_octavaPromocion_capital.mp4" type="video/mp4">
+      </video>
+
+      <div class="play-btn" id="playBtn">
+        ▶
+      </div>
+
+    </div>
+
+  </div>
+</section>
 <section class="hero-ubicacion text-white">
 
   <div class="container-fluid">
@@ -338,6 +361,17 @@
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function playVideo() {
+  const video = document.getElementById("videoPromo");
+  const btn = document.getElementById("playBtn");
+
+  video.setAttribute("controls", "true");
+  video.play();
+  btn.style.display = "none";
+}
+</script>
 
 <script>
 function cambiarUbicacion(direccion) {
