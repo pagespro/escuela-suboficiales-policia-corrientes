@@ -271,7 +271,6 @@ body {
   padding-left: 100%;
   animation: moverTexto 25s linear infinite;
 }
-
 /*  PRESENTACIÓN  */
 /* Espaciado y tamaños responsivos */
 .presentacion {
@@ -444,17 +443,49 @@ h1, h2, h3 {
   color: #0b2c4d;
 }
 
+/* TARJETA */
 .galeria-item {
   transition: 0.3s;
+  text-align: center;
 }
 
 .galeria-item:hover {
   transform: translateY(-5px);
 }
 
-.galeria video {
-  max-height: 350px;
-  object-fit: cover;
+/* CONTENEDOR DEL VIDEO */
+.video-box {
+  width: 100%;
+  max-width: 500px; /* 🔥 controla tamaño */
+  height: 300px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* VIDEO GENERAL */
+.video-box video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* VIDEO VERTICAL */
+.video-vertical {
+  height: 100%;
+  width: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .video-box {
+    height: 250px;
+  }
 }
 
 
